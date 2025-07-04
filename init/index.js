@@ -1,6 +1,6 @@
 const mongoose=require("mongoose");
 const initData=require("./data.js");
-const Listing=require("../models/listings.js");
+const Listing=require("../models/listing.js");
 
 const MONGO_URL="mongodb://127.0.0.1:27017/staySphere";
 
@@ -19,6 +19,10 @@ async function main() {
 
 const initDB=async()=>{
     await Listing.deleteMany({});
+    initData.data = initData.data.map((obj) =>({
+        ...obj,
+        owner: "685edfc0124369fcbc43d914",
+    }));
     await Listing.insertMany(initData.data);
     console.log("Data was initialized");
 };

@@ -1,6 +1,6 @@
 //This Schema is for Server side validation 
 //this is for edit listing(update route) and new listing (create route) 
-//suppose if the form is accepted with empty feild (eg, title, location, etc), joi will not allow such, 
+//suppose if the form is accepted with empty field (eg, title, location, etc), joi will not allow such, 
 
 
 
@@ -40,3 +40,9 @@ module.exports.listingSchema = Joi.object({
     }).required(),
 });
 
+module.exports.reviewSchema = Joi.object({
+    review: Joi.object({
+        rating: Joi.number().required().min(1).max(5),
+        comment: Joi.string().required(),    
+    }).required(),
+});

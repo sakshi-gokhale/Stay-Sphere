@@ -7,7 +7,7 @@
     <br>
     <form method="POST" action="/listings" novalidate class="needs-validation">
         <div class="mb-3">
-        <lable for="title" class="form-lable">Title</lable>
+        <label for="title" class="form-label">Title</label>
         <input 
         name="listing[title]" 
         placeholder="Add a title" 
@@ -17,28 +17,28 @@
         </div>
         
         <div class="mb-3">
-        <lable for="description" class="form-lable">Desciption</lable>
+        <label for="description" class="form-label">Desciption</label>
         <textarea name="listing[description]" placeholder="enter description" class="form-control"  required></textarea>
         <div class="invalid-feedback">Please enter a short description </div>
         </div>
         
         
         <div class="mb-3">
-        <lable for="image" class="form-lable">Image Link</lable>
+        <label for="image" class="form-label">Image Link</label>
         <input name="listing[image]" placeholder="enter image URL/link" type="text" class="form-control"  required>  
         <div class="invalid-feedback">please enter valid url</div> 
         </div>
 
         <div class="row">
         <div class="mb-3 col-md-4">
-        <lable for="price" class="form-lable">Price</lable>
+        <label for="price" class="form-label">Price</label>
         <input name="listing[price]" placeholder="1200"  class="form-control"  required>
         <div class="invalid-feedback">Price should be valid</div>
         </div>
         
         
         <div class="mb-3 col-md-8">
-            <lable for="country" class="form-lable">Country</lable>
+            <label for="country" class="form-label">Country</label>
             <input name="listing[country]" placeholder="India" type="text" class="form-control"  required>
             <div class="invalid-feedback">Country name should be valid</div>
            </div>
@@ -46,7 +46,7 @@
         </div>
 
         <div class="mb-3">
-        <lable for="location" class="form-lable">Location</lable>
+        <label for="location" class="form-label">Location</label>
         <input name="listing[location]" placeholder="Mumbai, Maharashtra" type="text" class="form-control"  required>
         <div class="invalid-feedback">Location should be valid </div>
         </div>
