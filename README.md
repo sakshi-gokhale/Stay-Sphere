@@ -9,7 +9,7 @@ Live Demo 👉 [StaySphere] (https://stay-sphere-0j96.onrender.com)
 ## ✨ Key Features
 
 - 🏠 **Discover Stays** – Browse properties with images, descriptions, pricing, and availability.
-- 🔍 **Search & Filter** – Easily find stays by location, price range, and amenities.
+- 🔍 **Search & Filter** – Easily find stays 
 - 🔐 **User Accounts** – Secure sign-up and login powered by Passport.js.
 - 📤 **Host Listings** – Add, edit, and manage your own listings with ease.
 - 💬 **User Reviews** – Read and write reviews to share experiences.
