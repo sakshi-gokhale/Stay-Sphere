@@ -1,4 +1,4 @@
-# 🏡 StaySphere – Explore, List, and Book Unique Stays
+# StaySphere – Explore, List, and Book Unique Stays
 
 Live Demo 👉 [StaySphere] (https://stay-sphere-0j96.onrender.com)
 
@@ -6,20 +6,20 @@ Live Demo 👉 [StaySphere] (https://stay-sphere-0j96.onrender.com)
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- 🏠 **Discover Stays** – Browse properties with images, descriptions, pricing, and availability.
-- 🔍 **Search & Filter** – Easily find stays 
-- 🔐 **User Accounts** – Secure sign-up and login powered by Passport.js.
-- 📤 **Host Listings** – Add, edit, and manage your own listings with ease.
-- 💬 **User Reviews** – Read and write reviews to share experiences.
-- 🗺️ **Map Integration** – View listing locations on an interactive Mapbox map.
-- 📸 **Image Uploads** – Upload listing photos using Cloudinary.
-- 📱 **Fully Responsive** – Built to work smoothly on both desktop and mobile screens.
+- **Discover Stays** – Browse properties with images, descriptions, pricing, and availability.
+- **Search & Filter** – Easily find stays 
+- **User Accounts** – Secure sign-up and login powered by Passport.js.
+- **Host Listings** – Add, edit, and manage your own listings with ease.
+- **User Reviews** – Read and write reviews to share experiences.
+- 🗺**Map Integration** – View listing locations on an interactive Mapbox map.
+- **Image Uploads** – Upload listing photos using Cloudinary.
+- **Fully Responsive** – Built to work smoothly on both desktop and mobile screens.
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Frontend:** HTML, CSS, Bootstrap, EJS  
 - **Backend:** Node.js, Express.js  
