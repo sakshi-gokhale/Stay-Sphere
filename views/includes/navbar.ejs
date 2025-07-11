@@ -1,0 +1,110 @@
+<style>
+  .search-btn {
+    background-color: #fe424d;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0 1rem;
+  }
+
+  .search-btn:hover {
+    background-color: #fe424d;
+    color: #fff;
+  }
+
+  .search-btn i {
+    display: inline;
+    margin-right: 0.5rem;
+  }
+
+  .search-input {
+    border-radius: 25px;
+    padding: 0.5rem 3rem;
+    border: 1px solid black;
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  .navbar-collapse {
+    background-color: white;
+    z-index: 1000;
+    padding: 0px 12px;
+  }
+
+  @media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 1050;
+    padding: 1rem;
+  }
+    }
+  
+
+
+nav.navbar {
+  position: relative; 
+  z-index: 1100;
+}
+
+
+
+  .navbar-toggler {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background-color: transparent !important;
+  }
+</style>
+
+<nav class="navbar navbar-expand-md sticky-top border-bottom" style="background-color: #ffffff;">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="/listings" tabindex="-1">
+      <i class="fa-regular fa-compass"></i>
+      <b style="font-size: 2rem; margin-left: 0.5rem;">StaySphere</b>
+    </a>
+
+    <!-- Toggle buttons group -->
+    <div class="d-flex ms-auto">
+      <!-- 🔍 Search Toggler -->
+      <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#searchCollapse">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <!-- Nav Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <!--Search Collapse -->
+    <div class="collapse navbar-collapse" id="searchCollapse">
+      <form class="d-flex mx-auto my-2" action="/listings" role="search">
+        <input class="form-control me-2 search-input" type="search" placeholder="Search destinations" />
+        <button class="btn search-btn" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>Search
+        </button>
+      </form>
+    </div>
+
+    <!-- Nav Collapse -->
+    <div class="collapse navbar-collapse" id="navCollapse">
+      <div class="navbar-nav ms-auto text-center">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/listings">Explore</a>
+        <a class="nav-link" href="/listings/new">Create Listing</a>
+
+        <% if (!currUser) { %>
+          <a class="nav-link" href="/signup"><b>Sign up</b></a>
+          <a class="nav-link" href="/login"><b>Log in</b></a>
+        <% } %>
+        <% if (currUser) { %>
+          <a class="nav-link" href="/logout"><b>Log out</b></a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>
